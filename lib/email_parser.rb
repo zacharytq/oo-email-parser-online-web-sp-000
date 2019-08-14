@@ -4,7 +4,11 @@
 # or whitespace (' ').
 
 class EmailAddressParser
-  def parse(emails)
+  def initialize(emails)
+    @these_emails = emails
+  end
+
+  def parse
     split_emails = emails.split(/\s|[,]/)
     last_emails = split_emails.uniq
     last_emails
