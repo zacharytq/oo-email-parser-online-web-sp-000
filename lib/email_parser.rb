@@ -9,7 +9,7 @@ class EmailAddressParser
   end
 
   def parse
-    split_emails = @emails.split(/\s|[,]/)
+    split_emails = @these_emails.split(/\s|[,]/)
     last_emails = split_emails.uniq
     last_emails
   end
